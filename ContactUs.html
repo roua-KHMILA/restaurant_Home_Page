@@ -8,8 +8,19 @@
     <link rel="stylesheet" href="style2.css" >
 </head>
 <body>
+    <nav>
+        <img id="logo"src="https://t4.ftcdn.net/jpg/02/75/70/03/360_F_275700347_09reCCwb7JBxTKiYQXsyri4riMKaHbj8.jpg" />
+       <br>
+       <div id="bg">
+       
+        <a href="index.html" class="links">Home</a>
+        <a href="#" class="links">AboutUs</a>
+        <a href="#" class="links">Menu</a>
+        <a href="ContactUs.html" class="links">ContactUs</a>
+    
+        </nav>
     <div id="form">
-    <form>
+    <form onsubmit="done()">
     <label >
         Type of query
     </label>
@@ -30,10 +41,10 @@
     </select>
     <br>
     <label >
-        Name
+        Name *
     </label>
     <br>
-    <input type="text" id="name">
+    <input type="text" id="name" required>
     <br>
     <label >
         Phone Number
@@ -47,11 +58,15 @@
     <br>
     <input type="text"  id="email">
     <br>
-    <label >
-        Are You A Member Of Online FoodShop?
-    </label>
-    <br>
-    <input type="radio" id="radio">
+    <div id="radio">
+        <label >
+            Are You A Member Of Online FoodShop?
+         </label>
+         <br>
+         Yes <input type="radio" name="eligible">
+         No <input type="radio" name="eligible">
+
+    </div>
     <br>
     <label >
         Ellaborate your query
@@ -64,7 +79,10 @@
 
 </form>
 </div>
-
+<script>
+    function done(){
+    alert("done");}
+</script>
     
 </body>
 </html>
